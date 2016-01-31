@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MPG Model Selector</title>
+  <meta charset="utf-8">
+  <meta name="description" content="MPG Model Selector">
+  <meta name="author" content="Yang Yaw Chang">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>MPG Model Selector</h1>
+    <h2>Coursera Developing Data Product Project</h2>
+    <p>Yang Yaw Chang<br/>MOOC Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>MPG Model Selector</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This is a peer assessment project for Developing Data Product course by Coursera. Following are to be delivered in this assignment:</p>
+
+<ul>
+<li>A shiny application hosted in Shiny server:
+<a href="https://y2charlie.shinyapps.io/DevelopingDataProductShiny/">Shiny App</a></li>
+<li>A 5 pages Slidify presentation hosted in Rpub.</li>
+<li>Git repository containing the source file:
+    - here</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Shiny Application</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>This application aims to demonstrate the basic implemetation of Shiny application.The application is hosted at</p>
+
+<p>The application  offers the following:</p>
+
+<ul>
+<li>Allow user to choose from 1 of 3 regressor combinations available.</li>
+<li>Update Adjusted Rsquare, model coefficient and residual plot based on the chosen regressor combination.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Data and Modelling technique</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>mtcars data is used in assignment. Linear regression technique is used for comparison of model fitness against different combination of regressors.</p>
+
+<pre><code class="r">head(mtcars)
+</code></pre>
+
+<pre><code>##                    mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4         21.0   6  160 110 3.90 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag     21.0   6  160 110 3.90 2.875 17.02  0  1    4    4
+## Datsun 710        22.8   4  108  93 3.85 2.320 18.61  1  1    4    1
+## Hornet 4 Drive    21.4   6  258 110 3.08 3.215 19.44  1  0    3    1
+## Hornet Sportabout 18.7   8  360 175 3.15 3.440 17.02  0  0    3    2
+## Valiant           18.1   6  225 105 2.76 3.460 20.22  1  0    3    1
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Input and Output</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>3 regressor combinations are made available as radio button option. Following is the sample output</p>
+
+<pre><code>##                Estimate Std. Error   t value     Pr(&gt;|t|)
+## (Intercept) 36.14653575 3.10478079 11.642218 4.944804e-12
+## cyl         -0.74515702 0.58278741 -1.278609 2.119166e-01
+## hp          -0.02495106 0.01364614 -1.828433 7.855337e-02
+## wt          -2.60648071 0.91983749 -2.833632 8.603218e-03
+## am           1.47804771 1.44114927  1.025603 3.141799e-01
+</code></pre>
+
+<pre><code>## [1] 0.8266657
+</code></pre>
+
+<p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='MPG Model Selector'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='The Shiny Application'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The Data and Modelling technique'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The Input and Output'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
