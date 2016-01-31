@@ -7,7 +7,7 @@ framework   : io2012 #***{io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js #***{highlight.js, prettify, highlight}
 hitheme     : tomorrow     # 
 widgets     : []         # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
+mode        : standalone # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
@@ -18,7 +18,7 @@ This is a peer assessment project for Developing Data Product course by Coursera
 [Shiny App](https://y2charlie.shinyapps.io/DevelopingDataProductShiny/)
 - A 5 pages Slidify presentation hosted in Rpub.
 - Git repository containing the source file:
-        - here
+[Git] (https://github.com/y2charlie/DevelopingDataProduct)
 
 --- .class #id 
 
@@ -55,7 +55,7 @@ head(mtcars)
 
 ## The Input and Output
 
-3 regressor combinations are made available as radio button option. Following is the sample output
+3 regressor combinations are made available as radio button option. Following is the sample output when one of the regressor combination is selected.
 
 ```
 ##                Estimate Std. Error   t value     Pr(>|t|)
